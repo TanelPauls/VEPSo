@@ -4,7 +4,12 @@ import GameWindow from "./components/GameWindow.jsx";
 function App() {
   return (
     <>
-      <GameWindow></GameWindow>
+      <div
+        className="justify-content-center w-75 border border-dark "
+        style={{ height: "75vh" }}
+      >
+        <GameWindow />
+      </div>
       <Footer />
     </>
   );

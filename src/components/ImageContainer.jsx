@@ -1,11 +1,26 @@
 import React from "react";
 import EventDescription from "./EventDescription.jsx";
+import { useState } from "react";
+import "./ImageContainer.css";
 
 const ImageContainer = () => {
+  const [imageNr, setImageNr] = useState(1);
+
   return (
     <>
-      <img src="https://www.techdonut.co.uk/sites/default/files/production/image/protecting-data-on-lost-and-stolen-usb-drives-5513519171.jpg"></img>
-      <EventDescription>asd</EventDescription>
+      {imageNr === 1 && (
+        <div className="esimenepilt">
+          <EventDescription>asd</EventDescription>
+        </div>
+      )}
+      {imageNr === 2 && (
+        <img
+          src="https://www.tripwire.com/sites/default/files/thumb_shutterstock_271700015_1024.jpg"
+          alt="Image 2"
+        />
+      )}
+
+      {/* <button onClick={() => setImageNr(2)}>Go to 2</button> */}
     </>
   );
 };

@@ -1,0 +1,9 @@
+{
+  "task": 1,
+  "url": "url",
+  "description": ["description nr1", "description nr2"],
+  "choices": [
+    ["d1", "Choice 1", "Choice 2"],
+    ["d2", "Choice 1", "Choice 2"]
+  ]
+}
