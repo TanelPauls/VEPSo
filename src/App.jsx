@@ -1,11 +1,10 @@
-import { useState } from "react";
+import Footer from "./components/Footer.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <h1>VEPSO</h1>
+      <Footer />
     </>
   );
 }
