@@ -1,5 +1,5 @@
 import Footer from "./components/Footer.jsx";
-import GameWindow from "./components/Gamewindow.jsx";
+import GameWindow from "./components/GameWindow.jsx";
 
 function App() {
   return (
