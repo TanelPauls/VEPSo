@@ -21,7 +21,7 @@ const ImageContainer = () => {
             className="w-100 h-100"
           />
         )}
-        {/* <button onClick={() => setImageNr(2)}>Go to 2</button> */}
+        {/* <buttton onClick={() => setImageNr(2)}>Go to 2</button> */}
       </div>
     </>
   );
