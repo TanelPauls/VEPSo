@@ -1,0 +1,19 @@
+/* ProgressBar.css */
+.progress-bar {
+  display: flex;
+  flex-direction: row !important; /* Ensures horizontal layout */
+  justify-content: space-between; /* Even spacing */
+  align-items: center; /* Centers vertically */
+  width: 100%;
+  gap: 0 !important;
+}
+.progress-bar > * {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar > *:not(:last-child) {
+  margin-right: 10px; /* Add space between icons, optional */
+}

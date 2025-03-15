@@ -1,0 +1,36 @@
+/* NumberIcon.css */
+.number-icon {
+  display: flex; /* Make sure icons behave as inline-flex */
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 5px solid gray;
+  transition: all 0.3s ease;
+}
+
+/* ✅ Done */
+.number-icon.done {
+  background-color: green;
+  color: white;
+  border-color: darkgreen;
+}
+
+/* 🔵 Active */
+.number-icon.active {
+  background-color: blue;
+  color: white;
+  border-color: darkblue; /* Darker border for visibility */
+  box-shadow: 0px 0px 8px rgba(0, 0, 255, 0.7);
+}
+
+/* ⚫ Not Done */
+.number-icon.not-done {
+  background-color: lightgray;
+  color: darkgray;
+  border-color: gray;
+}

@@ -1,9 +1,70 @@
 {
-  "task": 1,
-  "url": "url",
-  "description": ["description nr1", "description nr2"],
-  "choices": [
-    ["d1", "Choice 1", "Choice 2"],
-    ["d2", "Choice 1", "Choice 2"]
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Oled avalikus kohas ja märkad maas tundmatut USB-mälupulka. Mida teed?",
+      "answers": [
+        {
+          "text": "Võtan USB-mälupulga kaasa ja ühendan selle oma arvutisse, kuid avan ainult turvalised failid, näiteks .txt-dokumendid.",
+          "points": 5
+        },
+        {
+          "text": "Jätan USB-mälupulga rahule ja teavitan lähimat turvatöötajat või asutuse IT-osakonda.",
+          "points": 10
+        },
+        {
+          "text": "Ühendan USB-mälupulga oma arvutisse, kuid kasutan enne selle avamist viirusetõrjet, et eemaldada võimalik pahavara.",
+          "points": 0
+        },
+        {
+          "text": "Kasutan virtuaalset masinat ja avatud lähtekoodiga tööriistu, et uurida USB-mälupulga sisu ilma riskita.",
+          "points": 0
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Sa saad ootamatu e-kirja, milles väidetakse, et su pangakonto on lukustatud ja pead kiiresti sisse logima, kasutades kirjas olevat linki. Mida teed?",
+      "answers": [
+        {
+          "text": "Klõpsan kohe lingile ja logind oma andmetega sisse, et vältida konto blokeerimist.",
+          "points": 0
+        },
+        {
+          "text": "Kontrollin saatja e-posti aadressi ja kui see tundub õige, kasutan lingil olevat sisselogimisvormi.",
+          "points": 3
+        },
+        {
+          "text": "Ei klõpsa lingile, vaid sisenen oma panga ametlikule veebilehele otse brauseri kaudu, et kontrollida konto olekut.",
+          "points": 10
+        },
+        {
+          "text": "Edastan e-kirja kõikidele oma kontaktidele, et nad oleksid teadlikud võimalikust probleemist.",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Sul on vaja kasutada avalikku WiFi-võrku kohvikus. Kuidas saad seda kõige turvalisemalt teha?",
+      "answers": [
+        {
+          "text": "Ühendan võrku ja kasutan ainult HTTPS-iga veebisaite, et vältida andmete lekkimist.",
+          "points": 5
+        },
+        {
+          "text": "Kasutades VPN-ühendust, et krüpteerida kogu minu liiklus ja kaitsta andmeid.",
+          "points": 10
+        },
+        {
+          "text": "Ühendan võrku ja sisestan oma e-posti ning pangakonto andmed ainult siis, kui mul on kiireloomuline vajadus.",
+          "points": 0
+        },
+        {
+          "text": "Kasutades ainult sotsiaalmeediat ja voogedastusteenuseid, sest need ei vaja turvalisust.",
+          "points": 2
+        }
+      ]
+    }
   ]
 }
