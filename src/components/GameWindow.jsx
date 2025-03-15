@@ -1,20 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import ImageContainer from "./ImageContainer.jsx";
 import ProgressBar from "./ProgressBar.jsx";
 import "./GameWindow.css";
 
 const GameWindow = () => {
-  const currentQuestion = 5;
+  const [currentQuestion, setCurrentQuestion] = useState(1);
   const totalQuestions = 7;
+
+  const handleQuestionClick = (questionNumber) => {
+    setCurrentQuestion(questionNumber);
+  };
   return (
     <>
       <div className="fill">
-        <ImageContainer />
+        <ImageContainer currentQuestion={currentQuestion} />
 
         <div>
           <ProgressBar
             currentQuestion={currentQuestion}
             totalQuestions={totalQuestions}
+            onQuestionClick={handleQuestionClick}
           />
         </div>
       </div>

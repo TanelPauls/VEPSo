@@ -2,7 +2,7 @@ import React from "react";
 import NumberIcon from "./NumberIcon.jsx";
 import "./ProgressBar.css"; // Import CSS
 
-const ProgressBar = ({ currentQuestion, totalQuestions = 9 }) => {
+const ProgressBar = ({ currentQuestion, totalQuestions, onQuestionClick }) => {
   return (
     <div className="progress-bar">
       {Array.from({ length: totalQuestions }, (_, index) => {
@@ -17,6 +17,7 @@ const ProgressBar = ({ currentQuestion, totalQuestions = 9 }) => {
             key={questionNumber}
             number={questionNumber}
             status={status}
+            onClick={() => onQuestionClick(questionNumber)}
           />
         );
       })}

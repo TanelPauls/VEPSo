@@ -11,6 +11,8 @@
   margin: 0 !important;
   border: 5px solid gray;
   transition: all 0.3s ease;
+  cursor: pointer;
+  user-select: none;
 }
 
 /* ✅ Done */
@@ -33,4 +35,7 @@
   background-color: lightgray;
   color: darkgray;
   border-color: gray;
+}
+.number-icon:not(.active):hover {
+  opacity: 0.7;
 }
