@@ -12,7 +12,9 @@ const Gamewindow = () => {
   };
   return (
     <>
-      <div className="containerForGameScreen">asd</div>
+      <div className="containerForGameScreen">
+        <ImageContainer currentQuestion={currentQuestion} />
+      </div>
       <div className="containerForProgressbar">
         <ProgressBar
           currentQuestion={currentQuestion}
@@ -20,13 +22,6 @@ const Gamewindow = () => {
           onQuestionClick={handleQuestionClick}
         />
       </div>
-      {/* <div className="fill">
-        <ImageContainer currentQuestion={currentQuestion} />
-
-        <div>
-          
-        </div>
-      </div> */}
     </>
   );
 };
