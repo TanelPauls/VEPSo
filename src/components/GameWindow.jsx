@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ImageContainer from "./ImageContainer.jsx";
 import ProgressBar from "./ProgressBar.jsx";
-import "./GameWindow.css";
+//import "./Gamewindow.css";
 
 const GameWindow = () => {
   const [currentQuestion, setCurrentQuestion] = useState(1);
@@ -12,7 +12,7 @@ const GameWindow = () => {
   };
   return (
     <>
-      <div className="fill">
+      {/* <div className="fill">
         <ImageContainer currentQuestion={currentQuestion} />
 
         <div>
@@ -22,8 +22,8 @@ const GameWindow = () => {
             onQuestionClick={handleQuestionClick}
           />
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
-export default GameWindow;
+export default Gamewindow;

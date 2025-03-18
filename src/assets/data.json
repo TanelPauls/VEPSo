@@ -3,45 +3,37 @@
     {
       "id": "q1",
       "url": "https://www.techdonut.co.uk/sites/default/files/production/image/protecting-data-on-lost-and-stolen-usb-drives-5513519171.jpg",
-      "question": "Oled avalikus kohas ja märkad maas tundmatut USB-mälupulka. Mida teed?",
+      "question": "Oled jalutuskäigul ja märkad maas tundmatut USB-mälupulka. Mida teed?",
       "answers": [
         {
-          "text": "Võtan USB-mälupulga kaasa ja ühendan selle oma arvutisse, kuid avan ainult turvalised failid, näiteks .txt-dokumendid.",
-          "points": 5
+          "text": "Võtan USB-mälupulga kaasa ja ühendan selle oma arvutisse, et näha, mis andmed seal peal on.",
+          "points": 0
         },
         {
-          "text": "Jätan USB-mälupulga rahule ja teavitan lähimat turvatöötajat või asutuse IT-osakonda.",
+          "text": "Jätan selle maha ega tee välja.",
+          "points": 0
+        },
+        {
+          "text": "Korjan üles ning annan üle politseile, et nemad saaksid uurida sisu ja võimalusel tagastada omanikule.",
           "points": 10
-        },
-        {
-          "text": "Ühendan USB-mälupulga oma arvutisse, kuid kasutan enne selle avamist viirusetõrjet, et eemaldada võimalik pahavara.",
-          "points": 0
-        },
-        {
-          "text": "Kasutan virtuaalset masinat ja avatud lähtekoodiga tööriistu, et uurida USB-mälupulga sisu ilma riskita.",
-          "points": 0
         }
       ]
     },
     {
       "id": "q2",
       "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/NR2-Rwanda.svg",
-      "question": "Oled avalikus kohas ja märkad maas tundmatut USB-mälupulka. Mida teed?",
+      "question": "Teel politseijaoskonda teed peatuse kohvikus, et keha kinnitada ning arvutis isiklike asjadega tegeleda. Valid wifi võrku, millega oma oma arvuti ühendada. Milline valikutest on kõige turvalisem?",
       "answers": [
         {
-          "text": "Võtan USB-mälupulga kaasa ja ühendan selle oma arvutisse, kuid avan ainult turvalised failid, näiteks .txt-dokumendid.",
-          "points": 5
-        },
-        {
-          "text": "Jätan USB-mälupulga rahule ja teavitan lähimat turvatöötajat või asutuse IT-osakonda.",
-          "points": 10
-        },
-        {
-          "text": "Ühendan USB-mälupulga oma arvutisse, kuid kasutan enne selle avamist viirusetõrjet, et eemaldada võimalik pahavara.",
+          "text": "Ühendan kohviku nimega paroolita WiFi võrku, kuna see on tasuta, kiire ja mugav.",
           "points": 0
         },
         {
-          "text": "Kasutan virtuaalset masinat ja avatud lähtekoodiga tööriistu, et uurida USB-mälupulga sisu ilma riskita.",
+          "text": "Teen isikliku mobiiliga kuumkoha ning kasutan seda.",
+          "points": 10
+        },
+        {
+          "text": "Ühendan võõra nimega paroolita WiFi võrku.",
           "points": 0
         }
       ]
@@ -49,22 +41,22 @@
     {
       "id": "q3",
       "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Csp-gzN1qAlH1KR5kNqdLM9wgO6ayiSKsQ&s",
-      "question": "Oled avalikus kohas ja märkad maas tundmatut USB-mälupulka. Mida teed?",
+      "question": "Lõid kasutajakonto isikliku veebipõhise kalender-märkmiku jaoks, kuid uus parool on raske ega jää meelde. ",
       "answers": [
         {
-          "text": "Võtan USB-mälupulga kaasa ja ühendan selle oma arvutisse, kuid avan ainult turvalised failid, näiteks .txt-dokumendid.",
-          "points": 5
-        },
-        {
-          "text": "Jätan USB-mälupulga rahule ja teavitan lähimat turvatöötajat või asutuse IT-osakonda.",
+          "text": "Kasutad paroolihaldurit, et parool turvaliselt salvestada",
           "points": 10
         },
         {
-          "text": "Ühendan USB-mälupulga oma arvutisse, kuid kasutan enne selle avamist viirusetõrjet, et eemaldada võimalik pahavara.",
+          "text": "Kasutada sama parooli kõikides rakendustes, et oleks lihtsam meeles pidada.",
           "points": 0
         },
         {
-          "text": "Kasutan virtuaalset masinat ja avatud lähtekoodiga tööriistu, et uurida USB-mälupulga sisu ilma riskita.",
+          "text": "Kirjutad parooli märkmepaberile ning kleebid selle arvutiekraani servale, et oleks alati leitav kui vaja.",
+          "points": 0
+        },
+        {
+          "text": "Muudad parooli millekski lihtsaks, näiteks 'qwerty', et see paremini meeles püsiks.",
           "points": 0
         }
       ]
@@ -72,22 +64,22 @@
     {
       "id": "q4",
       "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVJL9xNJt3Gd61sSqfrw0nOc0zEc0c4UpVYw&s",
-      "question": "Oled avalikus kohas ja märkad maas tundmatut USB-mälupulka. Mida teed?",
+      "question": "Sotsiaalmeediat scrollides hakkab silma artikkel koos fotoga Donald Trumpi arreteerimisest",
       "answers": [
         {
-          "text": "Võtan USB-mälupulga kaasa ja ühendan selle oma arvutisse, kuid avan ainult turvalised failid, näiteks .txt-dokumendid.",
-          "points": 5
-        },
-        {
-          "text": "Jätan USB-mälupulga rahule ja teavitan lähimat turvatöötajat või asutuse IT-osakonda.",
-          "points": 10
-        },
-        {
-          "text": "Ühendan USB-mälupulga oma arvutisse, kuid kasutan enne selle avamist viirusetõrjet, et eemaldada võimalik pahavara.",
+          "text": "Tundub ehtne ning kajastab Trumpi tegelikku vahistamist.",
           "points": 0
         },
         {
-          "text": "Kasutan virtuaalset masinat ja avatud lähtekoodiga tööriistu, et uurida USB-mälupulga sisu ilma riskita.",
+          "text": "",
+          "points": 10
+        },
+        {
+          "text": "See on tehisintellekti abil loodud deepfake.",
+          "points": 10
+        },
+        {
+          "text": "",
           "points": 0
         }
       ]
@@ -95,22 +87,22 @@
     {
       "id": "q5",
       "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC2TSns_izFl_0hz2UNjrT-DzQMLLy3jzWOA&s",
-      "question": "Oled avalikus kohas ja märkad maas tundmatut USB-mälupulka. Mida teed?",
+      "question": "",
       "answers": [
         {
-          "text": "Võtan USB-mälupulga kaasa ja ühendan selle oma arvutisse, kuid avan ainult turvalised failid, näiteks .txt-dokumendid.",
+          "text": "",
           "points": 5
         },
         {
-          "text": "Jätan USB-mälupulga rahule ja teavitan lähimat turvatöötajat või asutuse IT-osakonda.",
+          "text": "",
           "points": 10
         },
         {
-          "text": "Ühendan USB-mälupulga oma arvutisse, kuid kasutan enne selle avamist viirusetõrjet, et eemaldada võimalik pahavara.",
+          "text": "",
           "points": 0
         },
         {
-          "text": "Kasutan virtuaalset masinat ja avatud lähtekoodiga tööriistu, et uurida USB-mälupulga sisu ilma riskita.",
+          "text": "",
           "points": 0
         }
       ]
@@ -118,22 +110,22 @@
     {
       "id": "q6",
       "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/NR6-Rwanda.svg",
-      "question": "Oled avalikus kohas ja märkad maas tundmatut USB-mälupulka. Mida teed?",
+      "question": "Päev on olnud pikk ja suundud koju puhkama. Laadisid alla uue mängurakenduse, mis soovib juurdepääsu sinu telefonis olevatele kontaktidele, asukohale, kaamerale ja mikrofonile.",
       "answers": [
         {
-          "text": "Võtan USB-mälupulga kaasa ja ühendan selle oma arvutisse, kuid avan ainult turvalised failid, näiteks .txt-dokumendid.",
-          "points": 5
-        },
-        {
-          "text": "Jätan USB-mälupulga rahule ja teavitan lähimat turvatöötajat või asutuse IT-osakonda.",
-          "points": 10
-        },
-        {
-          "text": "Ühendan USB-mälupulga oma arvutisse, kuid kasutan enne selle avamist viirusetõrjet, et eemaldada võimalik pahavara.",
+          "text": "Ma ei pööra tähelepanu, mida rakendus küsib, vaid nõustun kõigega, et seda võimalikult ruttu kasutama saaksin asuda.",
           "points": 0
         },
         {
-          "text": "Kasutan virtuaalset masinat ja avatud lähtekoodiga tööriistu, et uurida USB-mälupulga sisu ilma riskita.",
+          "text": "Keeldun juurdepääsude andmisest, sest minu hinnangul mäng seda ei vaja ning kontrollin rakenduse tausta turvalisuse huvides.",
+          "points": 10
+        },
+        {
+          "text": "Luban juurdepääsu kaamerale ja mikrofonile, sest need tunduvad vähem ohtlikud.",
+          "points": 0
+        },
+        {
+          "text": "Annan kõik õigused ajutiselt ja hiljem vaatan üle, kas need on ikka vajalikud.",
           "points": 0
         }
       ]
@@ -141,23 +133,19 @@
     {
       "id": "q7",
       "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_KaPusR-COFqOgqFi5Md2cWCzAeMQkU_3Dw&s",
-      "question": "Oled avalikus kohas ja märkad maas tundmatut USB-mälupulka. Mida teed?",
+      "question": "Õhtul viimase asjana e-kirju lugedes avastad sealt järgneva kirja pangalt. Kuidas käitud?",
       "answers": [
         {
-          "text": "Võtan USB-mälupulga kaasa ja ühendan selle oma arvutisse, kuid avan ainult turvalised failid, näiteks .txt-dokumendid.",
-          "points": 5
+          "text": "Toimetan vastavalt juhistele, et oma pangakonto päästa.",
+          "points": 0
         },
         {
-          "text": "Jätan USB-mälupulga rahule ja teavitan lähimat turvatöötajat või asutuse IT-osakonda.",
+          "text": "Ei tee välja, kuna kiri tundub pettus olevat.",
           "points": 10
         },
         {
-          "text": "Ühendan USB-mälupulga oma arvutisse, kuid kasutan enne selle avamist viirusetõrjet, et eemaldada võimalik pahavara.",
-          "points": 0
-        },
-        {
-          "text": "Kasutan virtuaalset masinat ja avatud lähtekoodiga tööriistu, et uurida USB-mälupulga sisu ilma riskita.",
-          "points": 0
+          "text": "Teavitan panka, et nende nimel tegutsevad petturid.",
+          "points": 10
         }
       ]
     }

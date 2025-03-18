@@ -6,7 +6,7 @@ const ImageContainer = ({ currentQuestion }) => {
   const question = questionsData.questions[currentQuestion - 1];
   return (
     <div
-      className="w-100 h-100 d-flex justify-content-center align-items-center"
+      className="w-100 h-100 justify-content-center align-items-center"
       style={{
         backgroundImage: `url(${question.url})`,
         backgroundSize: "cover",
@@ -15,7 +15,7 @@ const ImageContainer = ({ currentQuestion }) => {
         height: "100%",
       }}
     >
-      <EventDescription>asd</EventDescription>
+      <EventDescription />
     </div>
   );
 };
