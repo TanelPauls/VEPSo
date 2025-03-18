@@ -1,19 +1,22 @@
 import Footer from "./components/Footer.jsx";
-import GameWindow from "./components/GameWindow.jsx";
+import "./App.css";
+import Gamewindow from "./components/Gamewindow.jsx";
 
 function App() {
   return (
     <>
-      <div className="d-flex vh-100 vw-100 justify-content-center align-items-center">
-        <div
-          className="bg-light border d-flex justify-content-center align-items-center"
-          style={{ width: "75vw", height: "75vh" }}
-        >
-          <GameWindow />
+      <div className="containerWholeScreen">
+        <div className="containerForContent">
+          <div className="containerNotFooter">
+            <div className="containerGameWindow">
+              <Gamewindow />
+            </div>
+          </div>
+          <div className="containerFooter">
+            <Footer />
+          </div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 }

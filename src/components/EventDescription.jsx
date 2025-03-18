@@ -6,12 +6,26 @@ const EventDescription = () => {
   const [currentQuestion, setCurrentQuestion] = useState(2);
 
   return (
-    <div className="min-h-screen flex flex-col justify-between">
-      <div className="flex-grow p-4">
-        <Answers currentQuestion={currentQuestion} />
-      </div>
+    <>
       <Description currentQuestion={currentQuestion} />
-    </div>
+      <div className="min-vh-100">
+        {/* Top Section (66%) */}
+        <div className="flex-grow-1 p-4">{/* Other content goes here */}</div>
+
+        {/* Bottom Section (33%) */}
+        <div
+          className=""
+          style={{
+            height: "28vh",
+            overflowY: "auto",
+            padding: 0,
+            border: "2px solid red",
+          }}
+        >
+          <Answers currentQuestion={currentQuestion} />
+        </div>
+      </div>
+    </>
   );
 };
 

@@ -6,9 +6,9 @@ const Answers = ({ currentQuestion }) => {
 
   return (
     <div className="p-4">
-      <ul className="list-disc pl-5 space-y-2">
+      <ul className="list-unstyled ps-3">
         {question.answers.map((answer, index) => (
-          <li key={index} className="text-gray-800">
+          <li key={index} className="text-dark mb-2">
             {answer.text}
           </li>
         ))}

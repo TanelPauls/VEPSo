@@ -1,3 +1,32 @@
-.esimenepilt {
-  background-image: url("https://www.techdonut.co.uk/sites/default/files/production/image/protecting-data-on-lost-and-stolen-usb-drives-5513519171.jpg");
+.containerForQuestions {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 33%;
+  background-color: red;
+  box-sizing: border-box;
+}
+.containerForQuestions > div {
+  margin: 3px;
+  flex-grow: 1;
+  background-color: rgb(209, 177, 177, 0.8);
+  width: 100%;
+  text-align: center;
+  border-radius: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.question1 {
+  margin-top: 0 !important;
+}
+.question4 {
+  margin-bottom: 0 !important;
 }
