@@ -18,10 +18,22 @@ const ImageContainer = ({ currentQuestion }) => {
       <div className="containerForQuestionsAndAnswers">
         <div className="containerForQuestions">{question.question}</div>
         <div className="containerForAnswers">
-          <div className="question1">{question.answers[0].text}</div>
-          <div className="question2">{question.answers[1].text}</div>
-          <div className="question3">{question.answers[2].text}</div>
-          <div className="question4">{question.answers[3].text}</div>
+          <div className="question1">
+            <span>{question.answers[0].text}</span>
+            <input type="checkbox" className="answer-checkbox" />
+          </div>
+          <div className="question2">
+            <span>{question.answers[1].text}</span>
+            <input type="checkbox" className="answer-checkbox" />
+          </div>
+          <div className="question3">
+            <span>{question.answers[2].text}</span>
+            <input type="checkbox" className="answer-checkbox" />
+          </div>
+          <div className="question4">
+            <span>{question.answers[3].text}</span>
+            <input type="checkbox" className="answer-checkbox" />
+          </div>
         </div>
       </div>
     </>

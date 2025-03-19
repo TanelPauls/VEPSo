@@ -31,10 +31,10 @@
   flex-grow: 1;
   background-color: rgb(0, 0, 0, 0.31);
 
-  text-align: center;
+  text-align: left;
   border-radius: 15px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
   color: white;
 }
@@ -49,11 +49,19 @@
   display: flex;
   align-items: center;
   padding-left: 10px;
+  padding-right: 10px;
   color: white;
+  justify-content: space-between;
 }
 .question1 {
   margin-top: 0 !important;
 }
 .question4 {
   margin-bottom: 0 !important;
+}
+
+.answer-checkbox {
+  margin-right: 10px;
+  transform: scale(1.2); /* Makes the checkbox slightly bigger */
+  cursor: pointer;
 }
