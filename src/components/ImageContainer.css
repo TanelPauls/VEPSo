@@ -1,19 +1,46 @@
-.containerForQuestions {
+.containerForQuestionsAndAnswers {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 95%;
-  display: flex;
-  flex-direction: column;
+  display: flex !important;
+  flex-direction: column !important;
   align-items: center;
   justify-content: center;
-  height: 33%;
-  background-color: rgb(0, 0, 0, 0.5);
+  height: 40%;
   box-sizing: border-box;
 }
-.containerForQuestions > div {
+.containerForQuestions {
+  background-color: rgb(141, 232, 141, 0.71);
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  justify-content: center;
+  padding-left: 10px;
+}
+.containerForAnswers {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100%;
+  height: 80%;
+
   margin: 2px;
+  flex-grow: 1;
+  background-color: rgb(0, 0, 0, 0.31);
+
+  text-align: center;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+}
+.containerForAnswers > div {
+  margin: 2px;
+  display: block;
   flex-grow: 1;
   background-color: rgb(0, 0, 0, 0.31);
   width: 100%;
@@ -21,8 +48,7 @@
   border-radius: 15px;
   display: flex;
   align-items: center;
-  justify-content: center;
-
+  padding-left: 10px;
   color: white;
 }
 .question1 {
