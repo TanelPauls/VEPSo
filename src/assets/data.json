@@ -160,6 +160,29 @@
           "points": 0
         }
       ]
+    },
+    {
+      "id": "q8",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_KaPusR-COFqOgqFi5Md2cWCzAeMQkU_3Dw&s",
+      "question": "Kas kontrollime vastuseid?",
+      "answers": [
+        {
+          "text": "",
+          "points": 0
+        },
+        {
+          "text": "",
+          "points": 0
+        },
+        {
+          "text": "",
+          "points": 0
+        },
+        {
+          "text": "",
+          "points": 0
+        }
+      ]
     }
   ]
 }

@@ -1,10 +1,22 @@
 import Footer from "./components/Footer.jsx";
 import "./App.css";
 import Gamewindow from "./components/Gamewindow.jsx";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <>
+      <Toaster
+        position="top-center"
+        reverseOrder={false}
+        toastOptions={{
+          duration: 5000,
+          style: {
+            fontSize: "1.2rem",
+            padding: "16px",
+          },
+        }}
+      />
       <div className="containerWholeScreen">
         <div className="containerForContent">
           <div className="containerNotFooter">

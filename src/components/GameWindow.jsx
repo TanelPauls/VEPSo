@@ -1,12 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import ImageContainer from "./ImageContainer.jsx";
 import ProgressBar from "./ProgressBar.jsx";
 import "./Gamewindow.css";
+import { toast } from "react-hot-toast";
 
 const Gamewindow = () => {
-  const totalQuestions = 7;
+  const [totalQuestions, setTotalQuestions] = useState(7);
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [answers, setAnswers] = useState(Array(totalQuestions).fill(null));
+  const [hasExpanded, setHasExpanded] = useState(false);
+
+  const allAnswered = useMemo(
+    () => answers.every((answer) => answer !== null),
+    [answers]
+  );
+
+  useEffect(() => {
+    if (allAnswered && !hasExpanded) {
+      setTotalQuestions(8);
+      setHasExpanded(true); // Prevents repeated updates
+      toast.success(
+        "Kõik küsimused vastatud! Nüüd saab vastuseid kontrollida! 🎉"
+      );
+    }
+  }, [allAnswered, hasExpanded]);
 
   const handleQuestionClick = (questionNumber) => {
     setCurrentQuestion(questionNumber);
