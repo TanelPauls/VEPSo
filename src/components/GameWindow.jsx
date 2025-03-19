@@ -32,6 +32,7 @@ const Gamewindow = () => {
           currentQuestion={currentQuestion}
           totalQuestions={totalQuestions}
           onQuestionClick={handleQuestionClick}
+          answers={answers}
         />
       </div>
     </>
