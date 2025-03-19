@@ -2,7 +2,14 @@ import React, { useMemo } from "react";
 import questionsData from "../assets/data.json";
 import "./ImageContainer.css";
 
-const ImageContainer = ({ currentQuestion, answers, onAnswerSelect }) => {
+const ImageContainer = ({
+  currentQuestion,
+  answers,
+  onAnswerSelect,
+  isLocked,
+  setIsLocked,
+  resetGame,
+}) => {
   const isConfirmationQuestion =
     currentQuestion > questionsData.questions.length; // Check if it's the new 8th question
   const selectedAnswer = answers[currentQuestion - 1];
@@ -36,20 +43,24 @@ const ImageContainer = ({ currentQuestion, answers, onAnswerSelect }) => {
 
           <div className="containerForButton">
             <button
-              className={`confirm-button ${
-                selectedAnswer === 1 ? "checked" : ""
-              }`}
-              onClick={() => onAnswerSelect(currentQuestion, 1)}
+              className="confirm-button"
+              onClick={() => {
+                setIsLocked(true);
+              }}
+              disabled={isLocked}
             >
               Jah!
             </button>
           </div>
         </div>
-        <div className="containerForScore">
-          <span>
-            {score} / {maxScore}
-          </span>
-        </div>
+        {isLocked && (
+          <div className="containerForScore">
+            <span>
+              {score} / {maxScore}
+            </span>
+            <button onClick={resetGame}>Proovi uuesti.</button>
+          </div>
+        )}
       </>
     );
   }
@@ -76,7 +87,7 @@ const ImageContainer = ({ currentQuestion, answers, onAnswerSelect }) => {
               key={index}
               className={`question${index + 1} answer-container ${
                 selectedAnswer === index + 1 ? "checked" : "unchecked"
-              }`}
+              } ${isLocked ? "locked" : ""}`} // ✅ Add "locked" class when answers are locked
             >
               <span>{answer.text}</span>
               <input
@@ -84,6 +95,7 @@ const ImageContainer = ({ currentQuestion, answers, onAnswerSelect }) => {
                 name={`question-${currentQuestion}`}
                 checked={selectedAnswer === index + 1}
                 onChange={() => onAnswerSelect(currentQuestion, index + 1)}
+                disabled={isLocked}
               />
             </label>
           ))}

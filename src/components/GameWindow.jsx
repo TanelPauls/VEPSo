@@ -5,6 +5,7 @@ import "./Gamewindow.css";
 import { toast } from "react-hot-toast";
 
 const Gamewindow = () => {
+  const [isLocked, setIsLocked] = useState(false);
   const [totalQuestions, setTotalQuestions] = useState(7);
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [answers, setAnswers] = useState(Array(totalQuestions).fill(null));
@@ -25,6 +26,14 @@ const Gamewindow = () => {
     }
   }, [allAnswered, hasExpanded]);
 
+  const resetGame = () => {
+    setTotalQuestions(7);
+    setAnswers(Array(7).fill(null));
+    setIsLocked(false);
+    setCurrentQuestion(1);
+    setHasExpanded(false);
+  };
+
   const handleQuestionClick = (questionNumber) => {
     setCurrentQuestion(questionNumber);
   };
@@ -42,6 +51,9 @@ const Gamewindow = () => {
           currentQuestion={currentQuestion}
           answers={answers}
           onAnswerSelect={handleAnswerSelection}
+          isLocked={isLocked}
+          setIsLocked={setIsLocked}
+          resetGame={resetGame}
         />
       </div>
       <div className="containerForProgressbar">
