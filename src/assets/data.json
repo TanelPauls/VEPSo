@@ -16,6 +16,10 @@
         {
           "text": "Korjan üles ning annan üle politseile, et nemad saaksid uurida sisu ja võimalusel tagastada omanikule.",
           "points": 10
+        },
+        {
+          "text": "Võtan USB-mälupulga kaasa ja viin selle IT-spetsialisti juurde kontrollimiseks, et veenduda, kas see sisaldab midagi ohtlikku.",
+          "points": 5
         }
       ]
     },
@@ -35,12 +39,62 @@
         {
           "text": "Ühendan võõra nimega paroolita WiFi võrku.",
           "points": 0
+        },
+        {
+          "text": "Ühendan kohviku WiFi võrku, kui sellel on parool, ning kasutan VPN-i oma andmete kaitsmiseks.",
+          "points": 5
         }
       ]
     },
     {
       "id": "q3",
       "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Csp-gzN1qAlH1KR5kNqdLM9wgO6ayiSKsQ&s",
+      "question": "Teed koolitööd ja otsid internetist abi. Leht, kuhu jõuad, nõuab uue konto loomist ning küsib registreerimisel sinu Google’i Gmaili parooli. Kuidas käitud?",
+      "answers": [
+        {
+          "text": "Sisestan oma Google'i Gmaili parooli, sest muidu ei saa vajalikku infot kätte.",
+          "points": 0
+        },
+        {
+          "text": "Mõtlen, et see on tavaline praktika, ja loon konto, kasutades sama parooli, mida mujalgi.",
+          "points": 0
+        },
+        {
+          "text": "Keeldun oma Google'i parooli sisestamast, sest ükski usaldusväärne leht ei tohiks seda küsida.",
+          "points": 10
+        },
+        {
+          "text": "Proovin esmalt kasutada lehe sisu ilma kontota, kuid kui see pole võimalik, kaalun parooli sisestamist.",
+          "points": 5
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVJL9xNJt3Gd61sSqfrw0nOc0zEc0c4UpVYw&s",
+      "question": "Sotsiaalmeediat scrollides hakkab silma artikkel koos fotoga Donald Trumpi arreteerimisest",
+      "answers": [
+        {
+          "text": "Tundub ehtne ning kajastab Trumpi tegelikku vahistamist.",
+          "points": 0
+        },
+        {
+          "text": "Kui pilt näeb realistlik välja ja artiklit jagavad paljud inimesed, on see tõenäoliselt tõsi.",
+          "points": 0
+        },
+        {
+          "text": "See on tehisintellekti abil loodud deepfake.",
+          "points": 10
+        },
+        {
+          "text": "Kontrollin teisi uudisteallikaid, kuid kuna mitmed sotsiaalmeediapostitused räägivad sama lugu, usun, et see on tõsi.",
+          "points": 5
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC2TSns_izFl_0hz2UNjrT-DzQMLLy3jzWOA&s",
       "question": "Lõid kasutajakonto isikliku veebipõhise kalender-märkmiku jaoks, kuid uus parool on raske ega jää meelde. ",
       "answers": [
         {
@@ -56,54 +110,8 @@
           "points": 0
         },
         {
-          "text": "Muudad parooli millekski lihtsaks, näiteks 'qwerty', et see paremini meeles püsiks.",
-          "points": 0
-        }
-      ]
-    },
-    {
-      "id": "q4",
-      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVJL9xNJt3Gd61sSqfrw0nOc0zEc0c4UpVYw&s",
-      "question": "Sotsiaalmeediat scrollides hakkab silma artikkel koos fotoga Donald Trumpi arreteerimisest",
-      "answers": [
-        {
-          "text": "Tundub ehtne ning kajastab Trumpi tegelikku vahistamist.",
-          "points": 0
-        },
-        {
-          "text": "",
-          "points": 10
-        },
-        {
-          "text": "See on tehisintellekti abil loodud deepfake.",
-          "points": 10
-        },
-        {
-          "text": "",
-          "points": 0
-        }
-      ]
-    },
-    {
-      "id": "q5",
-      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC2TSns_izFl_0hz2UNjrT-DzQMLLy3jzWOA&s",
-      "question": "",
-      "answers": [
-        {
-          "text": "",
+          "text": "Kirjutad parooli märkmikku, mida hoiad turvalises kohas, näiteks sahtlis.",
           "points": 5
-        },
-        {
-          "text": "",
-          "points": 10
-        },
-        {
-          "text": "",
-          "points": 0
-        },
-        {
-          "text": "",
-          "points": 0
         }
       ]
     },
@@ -125,8 +133,8 @@
           "points": 0
         },
         {
-          "text": "Annan kõik õigused ajutiselt ja hiljem vaatan üle, kas need on ikka vajalikud.",
-          "points": 0
+          "text": "Keeldun juurdepääsude andmisest esialgu, kuid kui mäng ei tööta korralikult, kaalun mõne loa andmist.",
+          "points": 5
         }
       ]
     },
@@ -141,11 +149,15 @@
         },
         {
           "text": "Ei tee välja, kuna kiri tundub pettus olevat.",
-          "points": 10
+          "points": 5
         },
         {
           "text": "Teavitan panka, et nende nimel tegutsevad petturid.",
           "points": 10
+        },
+        {
+          "text": "Klikin lingile, et veenduda, kas see on tõesti panga ametlik leht.",
+          "points": 0
         }
       ]
     }

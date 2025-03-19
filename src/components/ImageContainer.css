@@ -9,20 +9,21 @@
   align-items: center;
   justify-content: center;
   height: 33%;
-  background-color: red;
+  background-color: rgb(0, 0, 0, 0.5);
   box-sizing: border-box;
 }
 .containerForQuestions > div {
-  margin: 3px;
+  margin: 2px;
   flex-grow: 1;
-  background-color: rgb(209, 177, 177, 0.8);
+  background-color: rgb(0, 0, 0, 0.31);
   width: 100%;
   text-align: center;
   border-radius: 15px;
-
   display: flex;
   align-items: center;
   justify-content: center;
+
+  color: white;
 }
 .question1 {
   margin-top: 0 !important;

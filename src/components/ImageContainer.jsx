@@ -18,10 +18,10 @@ const ImageContainer = ({ currentQuestion }) => {
       ></div>
 
       <div className="containerForQuestions">
-        <div className="question1">asd</div>
-        <div className="question2">asd</div>
-        <div className="question3">asd</div>
-        <div className="question4">asd</div>
+        <div className="question1">{question.answers[0].text}</div>
+        <div className="question2">{question.answers[1].text}</div>
+        <div className="question3">{question.answers[2].text}</div>
+        <div className="question4">{question.answers[3].text}</div>
       </div>
       {/* <EventDescription /> */}
     </>
