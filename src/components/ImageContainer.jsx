@@ -1,10 +1,75 @@
-import React from "react";
+import React, { useMemo } from "react";
 import questionsData from "../assets/data.json";
 import "./ImageContainer.css";
 
-const ImageContainer = ({ currentQuestion, answers, onAnswerSelect }) => {
-  const question = questionsData.questions[currentQuestion - 1];
+const ImageContainer = ({
+  currentQuestion,
+  answers,
+  onAnswerSelect,
+  isLocked,
+  setIsLocked,
+  resetGame,
+}) => {
+  const isConfirmationQuestion =
+    currentQuestion > questionsData.questions.length; // Check if it's the new 8th question
   const selectedAnswer = answers[currentQuestion - 1];
+  const maxScore = useMemo(() => {
+    return questionsData.questions.reduce((total, question) => {
+      const maxPoints = Math.max(
+        ...question.answers.map((answer) => answer.points)
+      );
+      return total + maxPoints;
+    }, 0);
+  }, []);
+
+  const score = useMemo(() => {
+    return answers.reduce((total, userAnswerIndex, questionIndex) => {
+      if (userAnswerIndex !== null) {
+        // Ensure an answer was selected
+        const question = questionsData.questions[questionIndex];
+        const selectedAnswerPoints =
+          question.answers[userAnswerIndex - 1].points; // Convert 1-based index
+        return total + selectedAnswerPoints;
+      }
+      return total;
+    }, 0);
+  }, [answers]);
+
+  if (isConfirmationQuestion) {
+    return (
+      <>
+        <div className="containerForQuestionsAndAnswers">
+          <div className="containerForQuestions">Kas kontrollime vastused?</div>
+
+          <div className="containerForButton">
+            <button
+              className="confirm-button"
+              onClick={() => {
+                setIsLocked(true);
+              }}
+              disabled={isLocked}
+            >
+              Jah!
+            </button>
+          </div>
+        </div>
+        {isLocked && (
+          <div className="containerForScore">
+            <span>
+              {score} / {maxScore}
+            </span>
+            <button className="restart-button" onClick={resetGame}>
+              Proovi uuesti.
+            </button>
+          </div>
+        )}
+      </>
+    );
+  }
+
+  // Normal question handling
+  const question = questionsData.questions[currentQuestion - 1];
+
   return (
     <>
       <div
@@ -19,58 +84,23 @@ const ImageContainer = ({ currentQuestion, answers, onAnswerSelect }) => {
       <div className="containerForQuestionsAndAnswers">
         <div className="containerForQuestions">{question.question}</div>
         <div className="containerForAnswers">
-          <label
-            className={`question1 answer-container ${
-              selectedAnswer === 1 ? "checked" : "unchecked"
-            }`}
-          >
-            <span>{question.answers[0].text}</span>
-            <input
-              type="radio"
-              name={`question-${currentQuestion}`}
-              checked={selectedAnswer === 1}
-              onChange={() => onAnswerSelect(currentQuestion, 1)}
-            />
-          </label>
-          <label
-            className={`question2 answer-container ${
-              selectedAnswer === 2 ? "checked" : "unchecked"
-            }`}
-          >
-            <span>{question.answers[1].text}</span>
-            <input
-              type="radio"
-              name={`question-${currentQuestion}`}
-              checked={selectedAnswer === 2}
-              onChange={() => onAnswerSelect(currentQuestion, 2)}
-            />
-          </label>
-          <label
-            className={`question3 answer-container ${
-              selectedAnswer === 3 ? "checked" : "unchecked"
-            }`}
-          >
-            <span>{question.answers[2].text}</span>
-            <input
-              type="radio"
-              name={`question-${currentQuestion}`}
-              checked={selectedAnswer === 3}
-              onChange={() => onAnswerSelect(currentQuestion, 3)}
-            />
-          </label>
-          <label
-            className={`question4 answer-container ${
-              selectedAnswer === 4 ? "checked" : "unchecked"
-            }`}
-          >
-            <span>{question.answers[3].text}</span>
-            <input
-              type="radio"
-              name={`question-${currentQuestion}`}
-              checked={selectedAnswer === 4}
-              onChange={() => onAnswerSelect(currentQuestion, 4)}
-            />
-          </label>
+          {question.answers.map((answer, index) => (
+            <label
+              key={index}
+              className={`question${index + 1} answer-container ${
+                selectedAnswer === index + 1 ? "checked" : "unchecked"
+              } ${isLocked ? "locked" : ""}`} // ✅ Add "locked" class when answers are locked
+            >
+              <span>{answer.text}</span>
+              <input
+                type="radio"
+                name={`question-${currentQuestion}`}
+                checked={selectedAnswer === index + 1}
+                onChange={() => onAnswerSelect(currentQuestion, index + 1)}
+                disabled={isLocked}
+              />
+            </label>
+          ))}
         </div>
       </div>
     </>

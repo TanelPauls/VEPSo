@@ -7,6 +7,7 @@ const ProgressBar = ({
   totalQuestions,
   onQuestionClick,
   answers,
+  hasExpanded,
 }) => {
   return (
     <div className="progress-bar">
@@ -23,12 +24,17 @@ const ProgressBar = ({
             answers[questionNumber - 1] !== null ? "done active" : "active";
         }
 
+        if (hasExpanded && questionNumber === totalQuestions) {
+          status = "control not-done";
+        }
+
         return (
           <NumberIcon
             key={questionNumber}
             number={questionNumber}
             status={status}
             onClick={() => onQuestionClick(questionNumber)}
+            isNew={hasExpanded && questionNumber === totalQuestions}
           />
         );
       })}

@@ -84,3 +84,99 @@
   background-color: rgba(255, 255, 255, 0.2);
   transition: background-color 0.3s ease-in-out;
 }
+.containerForButton {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100%;
+  height: 80%;
+  margin: 2px;
+  flex-grow: 1;
+  text-align: left;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.confirm-button {
+  background-color: #007bff;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.confirm-button:hover {
+  background-color: #0056b3;
+}
+
+.confirm-button.checked {
+  background-color: green;
+  cursor: default;
+}
+.containerForScore {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40%;
+  box-sizing: border-box;
+  background-color: rgb(141, 232, 141, 0.71);
+  margin-top: 1%;
+  text-align: center;
+}
+.containerForScore span {
+  font-size: clamp(
+    1rem,
+    10vw,
+    7rem
+  ); /* Min 1rem, Ideal 5% of width, Max 3rem */
+  font-weight: bold;
+  white-space: nowrap; /* Prevents line breaks */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds "..." if text overflows */
+  max-width: 100%; /* Ensures text doesn't overflow */
+}
+.answer-container.locked {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.answer-container.locked input {
+  pointer-events: none;
+}
+.confirm-button:disabled,
+.confirm-button:disabled:hover {
+  background-color: gray !important;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.restart-button {
+  background-color: #ff4747; /* 🔴 Red color to indicate restart */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.restart-button:hover {
+  background-color: #cc0000; /* 🔴 Darker red on hover */
+  transform: scale(1.05); /* ✅ Slightly enlarges for effect */
+}
+
+.restart-button:active {
+  transform: scale(0.95); /* ✅ Press animation */
+}
