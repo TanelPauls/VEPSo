@@ -50,6 +50,7 @@ const Gamewindow = () => {
           totalQuestions={totalQuestions}
           onQuestionClick={handleQuestionClick}
           answers={answers}
+          hasExpanded={hasExpanded}
         />
       </div>
     </>

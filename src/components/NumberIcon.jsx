@@ -1,10 +1,10 @@
 import React from "react";
 import "./NumberIcon.css"; // New CSS file for icons
 
-const NumberIcon = ({ number, status, onClick }) => {
+const NumberIcon = ({ number, status, onClick, isNew }) => {
   return (
     <div className={`number-icon ${status}`} onClick={onClick}>
-      {number}
+      {isNew ? "K" : number}
     </div>
   );
 };
