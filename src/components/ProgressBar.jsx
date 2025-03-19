@@ -2,15 +2,26 @@ import React from "react";
 import NumberIcon from "./NumberIcon.jsx";
 import "./ProgressBar.css"; // Import CSS
 
-const ProgressBar = ({ currentQuestion, totalQuestions, onQuestionClick }) => {
+const ProgressBar = ({
+  currentQuestion,
+  totalQuestions,
+  onQuestionClick,
+  answers,
+}) => {
   return (
     <div className="progress-bar">
       {Array.from({ length: totalQuestions }, (_, index) => {
         const questionNumber = index + 1;
         let status = "not-done";
 
-        if (questionNumber < currentQuestion) status = "done";
-        if (questionNumber === currentQuestion) status = "active";
+        if (answers[questionNumber - 1] !== null) {
+          status = "done";
+        }
+
+        if (questionNumber === currentQuestion) {
+          status =
+            answers[questionNumber - 1] !== null ? "done active" : "active";
+        }
 
         return (
           <NumberIcon
