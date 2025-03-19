@@ -58,7 +58,9 @@ const ImageContainer = ({
             <span>
               {score} / {maxScore}
             </span>
-            <button onClick={resetGame}>Proovi uuesti.</button>
+            <button className="restart-button" onClick={resetGame}>
+              Proovi uuesti.
+            </button>
           </div>
         )}
       </>

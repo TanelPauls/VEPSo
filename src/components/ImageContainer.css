@@ -129,7 +129,7 @@
   height: 40%;
   box-sizing: border-box;
   background-color: rgb(141, 232, 141, 0.71);
-  margin-top: 2%;
+  margin-top: 1%;
   text-align: center;
 }
 .containerForScore span {
@@ -157,4 +157,26 @@
   background-color: gray !important;
   cursor: not-allowed;
   opacity: 0.6;
+}
+.restart-button {
+  background-color: #ff4747; /* 🔴 Red color to indicate restart */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.restart-button:hover {
+  background-color: #cc0000; /* 🔴 Darker red on hover */
+  transform: scale(1.05); /* ✅ Slightly enlarges for effect */
+}
+
+.restart-button:active {
+  transform: scale(0.95); /* ✅ Press animation */
 }
