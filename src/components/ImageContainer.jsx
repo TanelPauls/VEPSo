@@ -1,5 +1,4 @@
 import React from "react";
-import EventDescription from "./EventDescription.jsx";
 import questionsData from "../assets/data.json";
 import "./ImageContainer.css";
 
@@ -16,14 +15,15 @@ const ImageContainer = ({ currentQuestion }) => {
           height: "100%",
         }}
       ></div>
-
-      <div className="containerForQuestions">
-        <div className="question1">asd</div>
-        <div className="question2">asd</div>
-        <div className="question3">asd</div>
-        <div className="question4">asd</div>
+      <div className="containerForQuestionsAndAnswers">
+        <div className="containerForQuestions">{question.question}</div>
+        <div className="containerForAnswers">
+          <div className="question1">{question.answers[0].text}</div>
+          <div className="question2">{question.answers[1].text}</div>
+          <div className="question3">{question.answers[2].text}</div>
+          <div className="question4">{question.answers[3].text}</div>
+        </div>
       </div>
-      {/* <EventDescription /> */}
     </>
   );
 };
