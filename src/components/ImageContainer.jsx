@@ -101,6 +101,7 @@ const ImageContainer = ({
                 checked={selectedAnswer === index + 1}
                 onChange={() => onAnswerSelect(currentQuestion, index + 1)}
                 disabled={isLocked}
+                style={{ accentColor: "darkgreen" }}
               />
             </label>
           ))}
