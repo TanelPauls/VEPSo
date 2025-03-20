@@ -2,10 +2,10 @@
 Educational quiz game built with react. The game displays a series of questions qith multiple answers, tracks the user's progress, and display the final score.
 
 ##Features
--Interactive quiz: the game presents multiple-choice questions to the user
--Progress bar: a dynamic progress bar shows the user's current question and completion status
--Toast notification: information message after completion
--Game reset: after finishing the quiz, user can reset the game to play again
+- Interactive quiz: the game presents multiple-choice questions to the user
+- Progress bar: a dynamic progress bar shows the user's current question and completion status
+- Toast notification: information message after completion
+- Game reset: after finishing the quiz, user can reset the game to play again
 
 ##Technologies used
 -React: the primary framework used to build the application
