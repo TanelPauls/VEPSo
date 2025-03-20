@@ -21,6 +21,7 @@ Educational quiz game built with react. The game displays a series of questions 
 - Toast notifications will appear at the top to inform the user about actions like answering questions or submitting the quiz
 
 ## File structure
+```
 /VEPSo
 │── /src
 │   ├── /assets
