@@ -21,29 +21,34 @@ Educational quiz game built with react. The game displays a series of questions 
 - Toast notifications will appear at the top to inform the user about actions like answering questions or submitting the quiz
 
 ## File structure
-*  /src
-*    /assets
-*     data.json              // JSON file containing the question data for the quiz.
-*   /components
-*     Footer.jsx             // Footer component displayed at the bottom of the screen.
-*     GameWindow.css         // CSS file for styling the GameWindow component.
-*     GameWindow.jsx         // Main component for displaying the game window and handling game logic.
-*     ImageContainer.css     // CSS file for styling the ImageContainer component.
-*     ImageContainer.jsx     // Displays questions and answers along with images (if applicable).
-*     NumberIcon.css         // CSS file for styling the NumberIcon component.
-*     NumberIcon.jsx         // Individual question number icon in the progress bar.
-*     ProgressBar.css        // CSS file for styling the ProgressBar component.
-*     ProgressBar.jsx        // Displays a progress bar with clickable question numbers.
-*   App.css                  // Global CSS file for styling the entire app.
-*   App.jsx                  // Root component that renders the entire app.
-*   main.jsx                 // Main entry point for the app, where React is rendered.
-*   .gitignore               // Git ignore file to exclude unwanted files and directories.
-*   README.md                // Project documentation with instructions for setup and usage.
-*   eslint.config.js         // ESLint configuration file to maintain consistent coding styles.
-*   index.html               // HTML file that acts as the entry point for the web app.
-*   package-lock.json        // Automatically generated file that locks the dependency versions.
-*   package.json             // Defines the project dependencies and scripts.
-*    vite.config.js           // Vite configuration file to set up the build tool and development server.
+/VEPSo
+│── /src
+│   ├── /assets
+│   │   ├── data.json               # JSON file containing the question data for the quiz
+│   │
+│   ├── /components
+│   │   ├── Footer.jsx              # Footer component displayed at the bottom of the screen
+│   │   ├── GameWindow.css          # CSS file for styling the GameWindow component
+│   │   ├── GameWindow.jsx          # Main component for displaying the game window and handling game logic
+│   │   ├── ImageContainer.css      # CSS file for styling the ImageContainer component
+│   │   ├── ImageContainer.jsx      # Displays questions and answers along with images (if applicable)
+│   │   ├── NumberIcon.css          # CSS file for styling the NumberIcon component
+│   │   ├── NumberIcon.jsx          # Individual question number icon in the progress bar
+│   │   ├── ProgressBar.css         # CSS file for styling the ProgressBar component
+│   │   ├── ProgressBar.jsx         # Displays a progress bar with clickable question numbers
+│   │
+│   ├── App.css                     # Global CSS file for styling the entire app
+│   ├── App.jsx                     # Root component that renders the entire app
+│   ├── main.jsx                    # Main entry point for the app, where React is rendered
+│
+├── .gitignore                      # Git ignore file to exclude unwanted files and directories
+├── README.md                        # Project documentation with instructions for setup and usage
+├── eslint.config.js                 # ESLint configuration file to maintain consistent coding styles
+├── index.html                       # HTML file that acts as the entry point for the web app
+├── package-lock.json                # Automatically generated file that locks the dependency versions
+├── package.json                     # Defines the project dependencies and scripts
+├── vite.config.js                    # Vite configuration file to set up the build tool and development server
+
 
 ## References
 BBC News. (2023, March 24). Fake Trump arrest photos: How to spot an AI-generated image. BBC News. https://www.bbc.com/news/world-us-canada-65069316
