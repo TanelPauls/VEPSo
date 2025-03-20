@@ -2,11 +2,11 @@
   "questions": [
     {
       "id": "q1",
-      "url": "https://vepso.ita.voco.ee/Pildid/hubane_suur.jpg",
-      "question": "Oled jalutuskäigul ja märkad maas tundmatut USB-mälupulka. Mida teed?",
+      "url": "https://vepso.ita.voco.ee/Pildid/1USB.webp",
+      "question": "Oled jalutuskäigul ja märkad maas tundmatut andmekandjat (väline kõvaketas, mälupulk). Mida teed?",
       "answers": [
         {
-          "text": "Võtan USB-mälupulga kaasa ja ühendan selle oma arvutisse, et näha, mis andmed seal peal on.",
+          "text": "Võtan andmekandja kaasa ja ühendan selle oma arvutisse, et näha, mis andmed seal peal on.",
           "points": 0
         },
         {
@@ -18,14 +18,14 @@
           "points": 10
         },
         {
-          "text": "Võtan USB-mälupulga kaasa ja viin selle IT-spetsialisti juurde kontrollimiseks, et veenduda, kas see sisaldab midagi ohtlikku.",
+          "text": "Võtan andmekanda kaasa ja viin selle IT-spetsialisti juurde kontrollimiseks, et veenduda, kas see sisaldab midagi ohtlikku.",
           "points": 5
         }
       ]
     },
     {
       "id": "q2",
-      "url": "https://vepso.ita.voco.ee/Pildid/kosk_suur.jpg",
+      "url": "https://vepso.ita.voco.ee/Pildid/2kohvik.jpg",
       "question": "Teel politseijaoskonda teed peatuse kohvikus, et keha kinnitada ning arvutis isiklike asjadega tegeleda. Valid wifi võrku, millega oma oma arvuti ühendada. Milline valikutest on kõige turvalisem?",
       "answers": [
         {
@@ -48,15 +48,15 @@
     },
     {
       "id": "q3",
-      "url": "https://vepso.ita.voco.ee/Pildid/lilleniit_suur.jpg",
+      "url": "https://vepso.ita.voco.ee/Pildid/3login.png",
       "question": "Teed koolitööd ja otsid internetist abi. Leht, kuhu jõuad, nõuab uue konto loomist ning küsib registreerimisel sinu Google’i Gmaili parooli. Kuidas käitud?",
       "answers": [
         {
-          "text": "Sisestan oma Google'i Gmaili parooli, sest muidu ei saa vajalikku infot kätte.",
-          "points": 0
+          "text": "Proovin esmalt kasutada lehe sisu ilma kontota, kuid kui see pole võimalik, kaalun parooli sisestamist.",
+          "points": 5
         },
         {
-          "text": "Mõtlen, et see on tavaline praktika, ja loon konto, kasutades sama parooli, mida mujalgi.",
+          "text": "Sisestan oma Google'i Gmaili parooli, sest muidu ei saa vajalikku infot kätte.",
           "points": 0
         },
         {
@@ -64,16 +64,20 @@
           "points": 10
         },
         {
-          "text": "Proovin esmalt kasutada lehe sisu ilma kontota, kuid kui see pole võimalik, kaalun parooli sisestamist.",
-          "points": 5
+          "text": "Mõtlen, et see on tavaline praktika, ja loon konto, kasutades sama parooli, mida mujalgi.",
+          "points": 0
         }
       ]
     },
     {
       "id": "q4",
-      "url": "https://vepso.ita.voco.ee/Pildid/linn_suur.jpg",
+      "url": "https://vepso.ita.voco.ee/Pildid/4trump.png",
       "question": "Sotsiaalmeediat scrollides hakkab silma artikkel koos fotoga Donald Trumpi arreteerimisest",
       "answers": [
+        {
+          "text": "See on tehisintellekti abil loodud deepfake.",
+          "points": 10
+        },
         {
           "text": "Tundub ehtne ning kajastab Trumpi tegelikku vahistamist.",
           "points": 0
@@ -83,10 +87,6 @@
           "points": 0
         },
         {
-          "text": "See on tehisintellekti abil loodud deepfake.",
-          "points": 10
-        },
-        {
           "text": "Kontrollin teisi uudisteallikaid, kuid kuna mitmed sotsiaalmeediapostitused räägivad sama lugu, usun, et see on tõsi.",
           "points": 5
         }
@@ -94,12 +94,16 @@
     },
     {
       "id": "q5",
-      "url": "https://vepso.ita.voco.ee/Pildid/lumetorm_suur.jpg",
+      "url": "https://vepso.ita.voco.ee/Pildid/5password.jpg",
       "question": "Lõid kasutajakonto isikliku veebipõhise kalender-märkmiku jaoks, kuid uus parool on raske ega jää meelde. ",
       "answers": [
         {
           "text": "Kasutad paroolihaldurit, et parool turvaliselt salvestada",
           "points": 10
+        },
+        {
+          "text": "Kirjutad parooli märkmikku, mida hoiad turvalises kohas, näiteks sahtlis.",
+          "points": 5
         },
         {
           "text": "Kasutada sama parooli kõikides rakendustes, et oleks lihtsam meeles pidada.",
@@ -108,16 +112,12 @@
         {
           "text": "Kirjutad parooli märkmepaberile ning kleebid selle arvutiekraani servale, et oleks alati leitav kui vaja.",
           "points": 0
-        },
-        {
-          "text": "Kirjutad parooli märkmikku, mida hoiad turvalises kohas, näiteks sahtlis.",
-          "points": 5
         }
       ]
     },
     {
       "id": "q6",
-      "url": "https://vepso.ita.voco.ee/Pildid/torm_suur.jpg",
+      "url": "https://vepso.ita.voco.ee/Pildid/6app.jpg",
       "question": "Päev on olnud pikk ja suundud koju puhkama. Laadisid alla uue mängurakenduse, mis soovib juurdepääsu sinu telefonis olevatele kontaktidele, asukohale, kaamerale ja mikrofonile.",
       "answers": [
         {
@@ -140,7 +140,7 @@
     },
     {
       "id": "q7",
-      "url": "https://vepso.ita.voco.ee/Pildid/varjutus_suur.jpg",
+      "url": "https://vepso.ita.voco.ee/Pildid/7email.jpg",
       "question": "Õhtul viimase asjana e-kirju lugedes avastad sealt järgneva kirja pangalt. Kuidas käitud?",
       "answers": [
         {

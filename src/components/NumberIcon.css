@@ -24,10 +24,9 @@
 
 /* 🔵 Active */
 .number-icon.active {
-  background-color: blue;
+  background-color: rgb(141, 232, 141, 0.71);
   color: white;
-  border-color: darkblue; /* Darker border for visibility */
-  box-shadow: 0px 0px 8px rgba(0, 0, 255, 0.7);
+  border-color: darkgreen; /* Darker border for visibility */
 }
 
 /* ⚫ Not Done */

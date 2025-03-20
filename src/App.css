@@ -11,7 +11,7 @@ body {
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background-color: rgb(97, 194, 242);
+  background-color: rgb(224, 240, 248);
 }
 .containerForContent {
   flex-direction: column;

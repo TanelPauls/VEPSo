@@ -98,7 +98,7 @@
   color: white;
 }
 .confirm-button {
-  background-color: #007bff;
+  background-color: green;
   color: white;
   font-size: 1.2rem;
   padding: 10px 20px;
@@ -109,7 +109,7 @@
 }
 
 .confirm-button:hover {
-  background-color: #0056b3;
+  background-color: darkgreen;
 }
 
 .confirm-button.checked {
@@ -128,9 +128,10 @@
   justify-content: center;
   height: 40%;
   box-sizing: border-box;
-  background-color: rgb(141, 232, 141, 0.71);
+  background-color: rgb(141, 232, 141, 0.25);
   margin-top: 1%;
   text-align: center;
+  border-radius: 15px;
 }
 .containerForScore span {
   font-size: clamp(
@@ -159,7 +160,7 @@
   opacity: 0.6;
 }
 .restart-button {
-  background-color: #ff4747; /* 🔴 Red color to indicate restart */
+  background-color: green; /* 🔴 Red color to indicate restart */
   color: white;
   font-size: 1.2rem;
   font-weight: bold;
@@ -173,7 +174,7 @@
 }
 
 .restart-button:hover {
-  background-color: #cc0000; /* 🔴 Darker red on hover */
+  background-color: darkgreen; /* 🔴 Darker red on hover */
   transform: scale(1.05); /* ✅ Slightly enlarges for effect */
 }
 

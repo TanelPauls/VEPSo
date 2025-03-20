@@ -39,7 +39,9 @@ const ImageContainer = ({
     return (
       <>
         <div className="containerForQuestionsAndAnswers">
-          <div className="containerForQuestions">Kas kontrollime vastused?</div>
+          <div className="containerForQuestions">
+            Kas soovid vastused lukustada?
+          </div>
 
           <div className="containerForButton">
             <button
@@ -59,7 +61,7 @@ const ImageContainer = ({
               {score} / {maxScore}
             </span>
             <button className="restart-button" onClick={resetGame}>
-              Proovi uuesti.
+              Alusta uuesti.
             </button>
           </div>
         )}
@@ -77,6 +79,7 @@ const ImageContainer = ({
           backgroundImage: `url(${question.url})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
+          resize: "both",
           width: "100%",
           height: "100%",
         }}
