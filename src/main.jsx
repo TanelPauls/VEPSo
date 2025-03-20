@@ -5,6 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    {" "}
+    {/* wrap app in StrictMode to enable additional checks */}
     <App />
   </StrictMode>
 );

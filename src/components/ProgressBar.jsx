@@ -2,6 +2,7 @@ import React from "react";
 import NumberIcon from "./NumberIcon.jsx";
 import "./ProgressBar.css"; // Import CSS
 
+//dynamic progressbar to visually track the progress
 const ProgressBar = ({
   currentQuestion,
   totalQuestions,
@@ -11,6 +12,8 @@ const ProgressBar = ({
 }) => {
   return (
     <div className="progress-bar">
+      {" "}
+      {/* generate the question number to display to player */}
       {Array.from({ length: totalQuestions }, (_, index) => {
         const questionNumber = index + 1;
         let status = "not-done";

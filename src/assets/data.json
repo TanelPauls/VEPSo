@@ -3,7 +3,7 @@
     {
       "id": "q1",
       "url": "https://vepso.ita.voco.ee/Pildid/1USB.webp",
-      "question": "Oled jalutuskäigul ja märkad maas tundmatut andmekandjat (väline kõvaketas, mälupulk). Mida teed?",
+      "question": "Oled jalutuskäigul ja märkad maas tundmatut andmekandjat (väline kõvaketas, mälupulk). Kuidas käitud?",
       "answers": [
         {
           "text": "Võtan andmekandja kaasa ja ühendan selle oma arvutisse, et näha, mis andmed seal peal on.",
@@ -26,7 +26,7 @@
     {
       "id": "q2",
       "url": "https://vepso.ita.voco.ee/Pildid/2kohvik.jpg",
-      "question": "Teel politseijaoskonda teed peatuse kohvikus, et keha kinnitada ning arvutis isiklike asjadega tegeleda. Valid wifi võrku, millega oma oma arvuti ühendada. Milline valikutest on kõige turvalisem?",
+      "question": "Teel politseijaoskonda peatud kohvikus, et keha kinnitada ning arvutit kasutada. Valid wifi võrku, millega oma oma arvuti ühendada. Milline valikutest on kõige turvalisem?",
       "answers": [
         {
           "text": "Ühendan kohviku nimega paroolita WiFi võrku, kuna see on tasuta, kiire ja mugav.",
@@ -118,7 +118,7 @@
     {
       "id": "q6",
       "url": "https://vepso.ita.voco.ee/Pildid/6app.jpg",
-      "question": "Päev on olnud pikk ja suundud koju puhkama. Laadisid alla uue mängurakenduse, mis soovib juurdepääsu sinu telefonis olevatele kontaktidele, asukohale, kaamerale ja mikrofonile.",
+      "question": "Päev on olnud pikk ja suundud koju. Laadisid alla uue mängurakenduse, mis soovib juurdepääsu telefonis olevatele kontaktidele, asukohale, kaamerale ja mikrofonile.",
       "answers": [
         {
           "text": "Ma ei pööra tähelepanu, mida rakendus küsib, vaid nõustun kõigega, et seda võimalikult ruttu kasutama saaksin asuda.",

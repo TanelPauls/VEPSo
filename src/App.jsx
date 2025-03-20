@@ -6,6 +6,7 @@ import { Toaster } from "react-hot-toast";
 function App() {
   return (
     <>
+      {/* display notification to the user */}
       <Toaster
         position="top-center"
         reverseOrder={false}

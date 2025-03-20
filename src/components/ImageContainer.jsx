@@ -10,9 +10,11 @@ const ImageContainer = ({
   setIsLocked,
   resetGame,
 }) => {
+  //check if the current question is confirmation question to trigger confirmation step to review answers
   const isConfirmationQuestion =
     currentQuestion > questionsData.questions.length; // Check if it's the new 8th question
   const selectedAnswer = answers[currentQuestion - 1];
+  //calculate the maximum possible score only once, not on every render unnecessarily
   const maxScore = useMemo(() => {
     return questionsData.questions.reduce((total, question) => {
       const maxPoints = Math.max(
@@ -20,7 +22,7 @@ const ImageContainer = ({
       );
       return total + maxPoints;
     }, 0);
-  }, []);
+  }, []); //empty dependency array to ensure that it's calculated only once
 
   const score = useMemo(() => {
     return answers.reduce((total, userAnswerIndex, questionIndex) => {

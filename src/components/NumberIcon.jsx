@@ -1,10 +1,12 @@
 import React from "react";
-import "./NumberIcon.css"; // New CSS file for icons
+import "./NumberIcon.css";
+import { FaStar } from "react-icons/fa";
 
+//different visual states based on status
 const NumberIcon = ({ number, status, onClick, isNew }) => {
   return (
     <div className={`number-icon ${status}`} onClick={onClick}>
-      {isNew ? "K" : number}
+      {isNew ? <FaStar /> : number}
     </div>
   );
 };

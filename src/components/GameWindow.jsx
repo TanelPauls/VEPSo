@@ -5,12 +5,13 @@ import "./Gamewindow.css";
 import { toast } from "react-hot-toast";
 
 const Gamewindow = () => {
+  //hooks to manage game logic
   const [isLocked, setIsLocked] = useState(false);
   const [totalQuestions, setTotalQuestions] = useState(7);
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [answers, setAnswers] = useState(Array(totalQuestions).fill(null));
   const [hasExpanded, setHasExpanded] = useState(false);
-
+  //caching the result of a calculation between re-renders to prevent unnecessary recalculations
   const allAnswered = useMemo(
     () => answers.every((answer) => answer !== null),
     [answers]
@@ -25,6 +26,7 @@ const Gamewindow = () => {
       );
     }
   }, [allAnswered, hasExpanded]);
+  //reset game to initial state to start again
 
   const resetGame = () => {
     setTotalQuestions(7);
@@ -46,6 +48,7 @@ const Gamewindow = () => {
   };
   return (
     <>
+      {/* render ImageContainer which handles images and answer choices */}
       <div className="containerForGameScreen">
         <ImageContainer
           currentQuestion={currentQuestion}
@@ -56,6 +59,7 @@ const Gamewindow = () => {
           resetGame={resetGame}
         />
       </div>
+      {/* render the ProgressBar to visually track user's progress */}
       <div className="containerForProgressbar">
         <ProgressBar
           currentQuestion={currentQuestion}
