@@ -49,7 +49,7 @@ Educational quiz game built with react. The game displays a series of questions 
 ├── package-lock.json                # Automatically generated file that locks the dependency versions
 ├── package.json                     # Defines the project dependencies and scripts
 ├── vite.config.js                    # Vite configuration file to set up the build tool and development server
-
+```
 
 ## References
 BBC News. (2023, March 24). Fake Trump arrest photos: How to spot an AI-generated image. BBC News. https://www.bbc.com/news/world-us-canada-65069316
